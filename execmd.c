@@ -27,7 +27,7 @@ void execmd(char *argv[])
 		{
 			print_env();
 		}
-		if (strmp(argv[0], "cd") == 0)
+		if (strcmp(argv[0], "cd") == 0)
 		{
 			cd(argv[1]);
 		}
