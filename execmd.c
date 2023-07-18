@@ -29,11 +29,11 @@ void execmd(char *argv[])
 		}
 		if (strmp(argv[0], "cd") == 0)
 		{
-			cd(argv[1])
+			cd(argv[1]);
 		}
 		if (strcmp(argv[0], "pwd") == 0)
 		{
-			pwd()
+			pwd();
 		}
 		/* generate the path to this command before passing it to execve */
 		actual_command = get_location(command);
